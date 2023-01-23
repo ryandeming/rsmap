@@ -34,6 +34,12 @@ export function getPath({start, end, onSuccess, onError}) {
                 "z": end.z
             }
         }),
+        headers: {
+            "key": API_KEY,
+            "secret": API_SECRET,
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
+        },
         dataType: 'json',
         contentType: 'application/json',
         success: function (data) {
