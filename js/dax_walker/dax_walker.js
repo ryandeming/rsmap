@@ -40,7 +40,7 @@ export function getPath({start, end, onSuccess, onError}) {
             "Access-Control-Allow-Origin": "*",
             "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
         },
-        dataType: 'json',
+        dataType: 'jsonp',
         contentType: 'application/json',
         success: function (data) {
             if (data['pathStatus'] !== "SUCCESS") {
